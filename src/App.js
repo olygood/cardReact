@@ -1,14 +1,31 @@
 import './App.css';
 
+import {BrowserRouter,Routes,Route} from "react-router-dom";
+import Layout from './components/Layout';
+import Home from './components/Home';
+import Works from './components/Works';
+import Contact from './components/Contact';
+
+
 function App() {
   return (
-    <div className="App">
-      
-        <div className="header">
-          <h1>je suis le header</h1>
-        </div>
+  <BrowserRouter>
+<div className="App">
+
+  <div className="header">
+  <Layout />
+
+   
+  </div>
+
           <div className='main'>
-            
+        
+      <Routes>
+          <Route path="/" element={<Home />}/>
+          <Route path="works" element={<Works />}/>
+          <Route path="contact" element={<Contact />}/>
+        </Routes>
+      
           </div>
          
         <div className="footer">
@@ -16,6 +33,7 @@ function App() {
         </div>
       
     </div>
+  </BrowserRouter>
   );
 }
 

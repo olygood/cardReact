@@ -30,7 +30,22 @@
   border: 2px solid burlywood;
 
 }
+.header{
+  padding: 1rem;
+  background: rgb(131, 131, 131);
+  border: 2px solid blue;
+}
+.link{
+  color: red;
+  margin: 1rem;
+  border: 1px solid black;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.link:hover{
 
-
+  color:rgb(110, 255, 19);
+  text-shadow: 2px 2px 0 rgb(28, 21, 21);
+}
 
 
